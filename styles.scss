@@ -1,0 +1,231 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/extendsClasses';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navigation{
+    background-color: $primary-color;
+    padding: 0.1rem;
+
+    .logo{
+        font-size: 1.5rem;
+        color: $text-color1;
+        padding: 0.5rem;
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .homePage{
+        a{
+            @include navItem;
+            &:hover{
+                @extend .hoverEffect;
+            }            
+        }
+        @extend .paddingNavItem;            
+    }
+
+    .aboutPage{
+        a{
+            @include navItem;
+            &:hover{
+                @extend .hoverEffect;
+            }            
+        }
+        @extend .paddingNavItem;            
+    }
+
+    .productsPage{
+        a{
+            @include navItem;
+            &:hover{
+                @extend .hoverEffect;
+            }            
+        }
+
+        @include dropdownMenu;
+        @extend .paddingNavItem;            
+
+    }
+
+    .servicesPage{
+        a{
+            @include navItem;
+            &:hover{
+                @extend .hoverEffect;
+            }            
+        }
+
+        @include dropdownMenu;
+        @extend .paddingNavItem;            
+    }
+
+    .contactPage{
+        a{
+            @include navItem;
+            &:hover{
+                @extend .hoverEffect;
+            }            
+        }
+        @extend .paddingNavItem;            
+    }
+}
+
+.homeSection{
+    padding: 0.5rem;
+    .carousel-inner{
+        border-radius: 3%;
+    }
+
+    .background-img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        filter: blur(3px);
+    }
+
+    .heading{
+        @include headings();
+    }
+
+    .sub-heading{
+        @include subHeadings();
+    }
+}
+
+.aboutSection{
+    background-color: $primary-color;
+    color: $text-color1;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    .heading{
+        @include headings();
+    }
+
+    .sub-heading{
+        @include subHeadings();
+    }
+
+    section{
+        padding: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+    }
+}
+
+.contactSection{
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .labelSection {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    
+    .inputSection {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+      
+
+    input[type=text].fname,input[type=text].lname,textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    .submitSection{
+        display: inline;
+    }
+
+    input[type=submit].submit1, input[type=submit].submit2 {
+        @include submitButtons;
+    }
+
+    @media screen and (max-width: 600px) {
+        .labelSection, .inputSection, input[type=submit].submit2,input[type=submit].submit1 {
+          width: 100%;
+          margin-top: 0.3rem;
+        }
+    }
+
+    .heading{
+        @include headings;
+    }
+}
+
+
+.products{
+    background-color: $primary-color;
+    .mainHeading{
+        @include headings();
+        color: $text-color1;
+    }
+
+    .customizeBtn{
+        @extend .customButton;
+    }
+
+    .card{
+        border-radius: 2%;
+        background-color: $card-backkground-color;
+    }
+
+    img{
+        border-radius: 2%;
+    }
+
+}
+
+.signupSection{
+    @extend .commonSection;
+}
+
+.loginSection{
+    @extend .commonSection;
+}
+
+.customizeBtn{
+    @extend .customButton;
+}
+
+.parentContainer{
+    background-color: $primary-color;
+}
+
+
+.pricingSection{
+    background-color: $card-backkground-color;
+}

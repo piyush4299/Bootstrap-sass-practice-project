@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAA;EACR,eAAe,EAAE,SAAS,CCFhB,KAAK;CDGlB;;AAED,AAAA,eAAe,CAAA;EACX,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CACzB;;AAED,AAAA,cAAc,CAAA;EACV,gBAAgB,ECRK,OAAO;EDS5B,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,EAAE;CACpB;;AAED,AAAA,aAAa,CAAA;EACT,gBAAgB,EClBJ,OAAO;EDmBnB,KAAK,EClBK,KAAK;EDmBf,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "../utilities/extendsClasses.scss",
+        "../utilities/variables.scss"
+    ],
+    "names": [],
+    "file": "extendsClasses.css"
+}

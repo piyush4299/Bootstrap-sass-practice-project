@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+.hoverEffect, .navigation .homePage a:hover, .navigation .aboutPage a:hover, .navigation .productsPage a:hover, .navigation .servicesPage a:hover, .navigation .contactPage a:hover {
+  text-decoration: underline white;
+}
+
+.paddingNavItem, .navigation .homePage, .navigation .aboutPage, .navigation .productsPage, .navigation .servicesPage, .navigation .contactPage {
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.commonSection, .signupSection, .loginSection {
+  background-color: #DDD6FE;
+  padding: 3rem;
+  border-radius: 3%;
+}
+
+.customButton, .products .customizeBtn, .customizeBtn {
+  background-color: #A78BFA;
+  color: white;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navigation {
+  background-color: #A78BFA;
+  padding: 0.1rem;
+}
+
+.navigation .logo {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.navigation .navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navigation .homePage a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding-bottom: 0.2rem;
+  padding: 0.3rem;
+}
+
+.navigation .aboutPage a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding-bottom: 0.2rem;
+  padding: 0.3rem;
+}
+
+.navigation .productsPage a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding-bottom: 0.2rem;
+  padding: 0.3rem;
+}
+
+.navigation .productsPage .dropdown-content {
+  display: none;
+  background-color: #A78BFA;
+  position: absolute;
+  min-width: 5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navigation .productsPage:hover .dropdown-content {
+  display: block;
+}
+
+.navigation .productsPage .dropdown-content a {
+  float: none;
+  color: white;
+  padding: 0.8rem 0.8rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navigation .productsPage .dropdown-content a:hover {
+  text-decoration: underline white;
+}
+
+.navigation .servicesPage a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding-bottom: 0.2rem;
+  padding: 0.3rem;
+}
+
+.navigation .servicesPage .dropdown-content {
+  display: none;
+  background-color: #A78BFA;
+  position: absolute;
+  min-width: 5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navigation .servicesPage:hover .dropdown-content {
+  display: block;
+}
+
+.navigation .servicesPage .dropdown-content a {
+  float: none;
+  color: white;
+  padding: 0.8rem 0.8rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navigation .servicesPage .dropdown-content a:hover {
+  text-decoration: underline white;
+}
+
+.navigation .contactPage a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding-bottom: 0.2rem;
+  padding: 0.3rem;
+}
+
+.homeSection {
+  padding: 0.5rem;
+}
+
+.homeSection .carousel-inner {
+  border-radius: 3%;
+}
+
+.homeSection .background-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.homeSection .heading {
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.homeSection .sub-heading {
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.aboutSection {
+  background-color: #A78BFA;
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.aboutSection .heading {
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.aboutSection .sub-heading {
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 2rem;
+}
+
+.aboutSection section {
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.aboutSection section:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.contactSection .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contactSection .labelSection {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.contactSection .inputSection {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.contactSection .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contactSection input[type=text].fname, .contactSection input[type=text].lname, .contactSection textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contactSection label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.contactSection .submitSection {
+  display: inline;
+}
+
+.contactSection input[type=submit].submit1, .contactSection input[type=submit].submit2 {
+  background-color: #A78BFA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 0.3rem 0.2rem;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .contactSection .labelSection, .contactSection .inputSection, .contactSection input[type=submit].submit2, .contactSection input[type=submit].submit1 {
+    width: 100%;
+    margin-top: 0.3rem;
+  }
+}
+
+.contactSection .heading {
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.products {
+  background-color: #A78BFA;
+}
+
+.products .mainHeading {
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.products .card {
+  border-radius: 2%;
+  background-color: #DDD6FE;
+}
+
+.products img {
+  border-radius: 2%;
+}
+
+.parentContainer {
+  background-color: #A78BFA;
+}
+
+.pricingSection {
+  background-color: #DDD6FE;
+}
+/*# sourceMappingURL=styles.css.map */

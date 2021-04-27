@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.hoverEffect{
+    text-decoration: underline $text-color1;
+}
+
+.paddingNavItem{
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.commonSection{
+    background-color: $card-backkground-color;
+    padding: 3rem;
+    border-radius: 3%;
+}
+
+.customButton{
+    background-color: $primary-color;
+    color: $text-color1;
+    border: none;
+}

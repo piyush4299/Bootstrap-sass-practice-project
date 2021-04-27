@@ -1,0 +1,21 @@
+.hoverEffect {
+  text-decoration: underline white;
+}
+
+.paddingNavItem {
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.commonSection {
+  background-color: #DDD6FE;
+  padding: 3rem;
+  border-radius: 3%;
+}
+
+.customButton {
+  background-color: #A78BFA;
+  color: white;
+  border: none;
+}
+/*# sourceMappingURL=extendsClasses.css.map */

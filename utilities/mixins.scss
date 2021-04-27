@@ -1,0 +1,64 @@
+@import './variables';
+
+@mixin navItem() {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $text-color1;
+    padding-bottom: 0.2rem;
+    padding: 0.3rem;
+
+}
+
+@mixin dropdownMenu() {
+    .dropdown-content {
+        display: none;
+        background-color: $primary-color;
+        position: absolute;
+        min-width: 5rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    &:hover .dropdown-content{
+        display: block;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: $text-color1;
+        padding: 0.8rem 0.8rem;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+        &:hover{
+            text-decoration: underline $text-color1;
+        }
+    }
+}
+
+@mixin headings() {
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+@mixin subHeadings() {
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 2rem;
+}
+
+@mixin submitButtons {
+    background-color: $primary-color;
+    color: $text-color1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 0.3rem 0.2rem;
+    width: auto;
+}

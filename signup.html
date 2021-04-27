@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login/Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="./css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class='container parentContainer'>
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-md-5">
+                    <div class="container signupSection mt-2 mb-2 h-80">
+                        <legend class="text-center font-weight-bold pb-2">Sign Up/Register</legend>
+                        <form class="needs-validation" novalidate>
+                            <div class="row mb-3">
+                                <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                                <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputName" placeholder="Full Name" aria-describedby="nameFeedback" required>
+                                <div id="nameFeedback" class="valid-feedback">
+                                    Looks Right!
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputMobile" class="col-sm-3 col-form-label">Mobile no</label>
+                                <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputMobile" placeholder="Mobile no." aria-describedby="mobileFeedback" required>
+                                <div class="valid-feedback" id="mobileFeedback">
+                                    Looks Right!
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email-Id" aria-describedby="emailFeedback" required> 
+                                <div id="emailFeedback" class="invalid-feedback">
+                                    Something is wrong!
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                                <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" aria-describedby="passwordFeedback" required>
+                                <div id="passwordFeedback" class="invalid-feedback" >
+                                    Something is wrong!
+                                </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary customizeBtn">Sign Up</button>
+                            <button type="submit" class="btn btn-primary customizeBtn">Reset</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="container loginSection mt-2 mb-2 h-80">
+                        <legend class="text-center font-weight-bold pb-2">Login</legend>
+                        <form>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Email id</label>
+                                <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email-Id" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                                <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Passowrd" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary customizeBtn">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
+        </script>
+    </body>
+</html>
